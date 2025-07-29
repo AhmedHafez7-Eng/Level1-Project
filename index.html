@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super 30 Restaurant</title>
+
+    <!-- External Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Super 30 Restaurant</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="hero d-flex align-items-center justify-content-center text-white"
+    >
+      <div class="text-center">
+        <h1>Welcome to Super 30 Restaurant</h1>
+        <p class="lead">Delicious Middle Eastern Flavors</p>
+        <a
+          class="btn btn-lg btn-success"
+          href="https://wa.me/01552143282?text=I%20would%20like%20to%20reserve%20a%20table"
+          target="_blank"
+          >Chat on WhatsApp</a
+        >
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container my-5">
+      <h2 class="text-center">About Us</h2>
+      <p class="text-center">
+        Since 1998, Super 30 Restaurant has been serving traditional dishes with
+        a modern twist.
+      </p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container my-5">
+      <h2 class="text-center mb-4">Our Menu</h2>
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/Koshari.jpg"
+              class="card-img-top"
+              alt="Koshari"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Koshari</h5>
+              <p class="card-text">Traditional Egyptian dish. EGP 20</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/Fattah.jpg"
+              class="card-img-top"
+              alt="Fattah"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fattah</h5>
+              <p class="card-text">A festive Egyptian dish. EGP 25</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/Molokhia.jpg"
+              class="card-img-top"
+              alt="Molokhia"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Molokhia</h5>
+              <p class="card-text">A popular Egyptian soup. EGP 15</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/Mixed_Grill.jpg"
+              class="card-img-top"
+              alt="Mixed Grill"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mixed Grill</h5>
+              <p class="card-text">A selection of grilled meats. EGP 30</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/Taamiya.jpg"
+              class="card-img-top"
+              alt="Taameya"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Taameya</h5>
+              <p class="card-text">Egyptian falafel. EGP 10</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/Foal_Medemes.jpg"
+              class="card-img-top"
+              alt="Ful Medames"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ful Medames</h5>
+              <p class="card-text">Fava bean stew. EGP 12</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="assets/images/Om_Ali.jpg"
+              class="card-img-top"
+              alt="Om Ali"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Om Ali</h5>
+              <p class="card-text">Egyptian bread pudding. EGP 15</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards similarly for Mixed Grill, Molokhia -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-light py-5" id="contact">
+      <div class="container text-center">
+        <h2>Reserve Your Table</h2>
+        <p>Call us now: <strong>0123456789</strong></p>
+        <a
+          class="btn btn-lg btn-success"
+          href="https://wa.me/01552143282?text=I%20would%20like%20to%20reserve%20a%20table"
+          target="_blank"
+          >Message us on WhatsApp</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Super 30 Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

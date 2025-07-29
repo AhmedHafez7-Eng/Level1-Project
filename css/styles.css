@@ -1,0 +1,84 @@
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar spacing to avoid overlap */
+body {
+    padding-top: 58px;
+}
+
+/* Hero section styling */
+.hero {
+    height: 92vh;
+    background-image: url('../assets/images/landingImage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .lead {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Menu card aesthetics */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Typography */
+h1,
+h2,
+h4 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+button.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
