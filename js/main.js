@@ -56,3 +56,10 @@ AOS.init({
 //     });
 // });
 /* ============================================= */
+// Handle Form Submission
+function handleSubmit(event) {
+    event.preventDefault();
+    alert("Your message has been sent successfully!");
+    event.target.reset(); // Reset form fields
+}
+// ==============================================

@@ -438,6 +438,148 @@ cards without usign grid & JS for it */
     /* Highlight active bullet */
 }
 
+/* ====================================== */
+/* Contact Section */
+/* === Contact Us Section === */
+.contact-us {
+    padding: 80px 20px;
+    background: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.contact-us h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #333;
+    position: relative;
+}
+
+.contact-us h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #e63946;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    border-radius: 2px;
+}
+
+/* Grid layout: Map and Form */
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === Google Map Styling === */
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Contact Form === */
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e63946;
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #e63946;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d62828;
+}
+
+/* === Responsive Typography & Padding === */
+@media (max-width: 768px) {
+    .contact-us h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us {
+        padding: 40px 10px;
+    }
+
+    .contact-us h2 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-form {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .map iframe {
+        min-height: 280px;
+    }
+}
 
 /* ====================================== */
