@@ -1,188 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super 30 Restaurant</title>
 
-    <!-- External Stylesheets -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Super 30 Restaurant</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delish Restaurant</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Header >> Nav & Hero Sections -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Delish</div>
+      <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
     </nav>
 
     <!-- Hero Section -->
-    <header
-      class="hero d-flex align-items-center justify-content-center text-white"
-    >
-      <div class="text-center">
-        <h1>Welcome to Super 30 Restaurant</h1>
-        <p class="lead">Delicious Middle Eastern Flavors</p>
-        <a
-          class="btn btn-lg btn-success"
-          href="https://wa.me/01552143282?text=I%20would%20like%20to%20reserve%20a%20table"
-          target="_blank"
-          >Chat on WhatsApp</a
-        >
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="container my-5">
-      <h2 class="text-center">About Us</h2>
-      <p class="text-center">
-        Since 1998, Super 30 Restaurant has been serving traditional dishes with
-        a modern twist.
-      </p>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="container my-5">
-      <h2 class="text-center mb-4">Our Menu</h2>
-      <div class="row gy-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="assets/images/Koshari.jpg"
-              class="card-img-top"
-              alt="Koshari"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Koshari</h5>
-              <p class="card-text">Traditional Egyptian dish. EGP 20</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="assets/images/Fattah.jpg"
-              class="card-img-top"
-              alt="Fattah"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Fattah</h5>
-              <p class="card-text">A festive Egyptian dish. EGP 25</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="assets/images/Molokhia.jpg"
-              class="card-img-top"
-              alt="Molokhia"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Molokhia</h5>
-              <p class="card-text">A popular Egyptian soup. EGP 15</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="assets/images/Mixed_Grill.jpg"
-              class="card-img-top"
-              alt="Mixed Grill"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Mixed Grill</h5>
-              <p class="card-text">A selection of grilled meats. EGP 30</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="assets/images/Taamiya.jpg"
-              class="card-img-top"
-              alt="Taameya"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Taameya</h5>
-              <p class="card-text">Egyptian falafel. EGP 10</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="assets/images/Foal_Medemes.jpg"
-              class="card-img-top"
-              alt="Ful Medames"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Ful Medames</h5>
-              <p class="card-text">Fava bean stew. EGP 12</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="assets/images/Om_Ali.jpg"
-              class="card-img-top"
-              alt="Om Ali"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Om Ali</h5>
-              <p class="card-text">Egyptian bread pudding. EGP 15</p>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards similarly for Mixed Grill, Molokhia -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Delish</h1>
+        <p>Delicious food made with love. Order now and taste the difference.</p>
+        <a href="#menu" class="btn">View Menu</a>
       </div>
     </section>
+  </header>
 
-    <!-- Contact Section -->
-    <section class="bg-light py-5" id="contact">
-      <div class="container text-center">
-        <h2>Reserve Your Table</h2>
-        <p>Call us now: <strong>0123456789</strong></p>
-        <a
-          class="btn btn-lg btn-success"
-          href="https://wa.me/01552143282?text=I%20would%20like%20to%20reserve%20a%20table"
-          target="_blank"
-          >Message us on WhatsApp</a
-        >
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div id="menu-container" class="menu-container">
+      <div class="menu-card">
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww"
+          alt="Burger">
+        <h3>Classic Burger</h3>
+        <p>Juicy beef patty, cheese, lettuce, tomato, and house sauce.</p>
+        <span class="price">$8.99</span>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2025 Super 30 Restaurant. All rights reserved.</p>
-    </footer>
+      <div class="menu-card">
+        <img
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emF8ZW58MHx8MHx8fDA%3D"
+          alt="Pizza">
+        <h3>Cheesy Pizza</h3>
+        <p>Stone-baked pizza with fresh mozzarella and basil.</p>
+        <span class="price">$10.49</span>
+      </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <div class="menu-card">
+        <img
+          src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFzdGF8ZW58MHx8MHx8fDA%3D"
+          alt="Pasta">
+        <h3>Italian Pasta</h3>
+        <p>Creamy alfredo pasta with parmesan and grilled chicken.</p>
+        <span class="price">$12.99</span>
+      </div>
+
+      <div class="menu-card">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1673590981774-d9f534e0c617?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2FsYWR8ZW58MHx8MHx8fDA%3D"
+          alt="Salad">
+        <h3>Fresh Salad</h3>
+        <p>Mixed greens with cherry tomatoes, cucumbers, and vinaigrette.</p>
+        <span class="price">$6.49</span>
+      </div>
+
+      <div class="menu-card">
+        <img
+          src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Dessert">
+        <h3>Chocolate Cake</h3>
+        <p>Rich chocolate cake with a creamy frosting.</p>
+        <span class="price">$4.99</span>
+      </div>
+
+      <div class="menu-card">
+        <img
+          src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRyaW5rfGVufDB8fDB8fHww"
+          alt="Drink">
+        <h3>Refreshing Drink</h3>
+        <p>Choose from our selection of soft drinks and juices.</p>
+        <span class="price">$2.49</span>
+      </div>
+
+      <div class="menu-card">
+        <img
+          src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c291cHxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Soup">
+        <h3>Hearty Soup</h3>
+        <p>Warm and comforting soup made with seasonal vegetables.</p>
+        <span class="price">$5.99</span>
+      </div>
+
+      <!-- <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2FuZHdpY2h8ZW58MHx8MHx8fDA%3D" alt="Sandwich">
+        <h3>Grilled Sandwich</h3>
+        <p>Toasted sandwich with ham, cheese, and fresh veggies.</p>
+        <span class="price">$7.49</span>
+      </div> -->
+
+
+    </div>
+  </section>
+
+  <!-- Scripting -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

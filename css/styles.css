@@ -1,4 +1,4 @@
-/* Reset & Base Styling */
+/* General Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,78 +7,191 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #fdfdfd;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Navbar spacing to avoid overlap */
-body {
-    padding-top: 58px;
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
 
-/* Hero section styling */
+.navbar .logo {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    color: #d62828;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #d62828;
+}
+
+/* Hero Section */
 .hero {
-    height: 92vh;
-    background-image: url('../assets/images/landingImage.jpg');
+    background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     background-position: center;
-    background-blend-mode: overlay;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
     font-size: 3rem;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
 }
 
-.hero .lead {
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-/* Menu card aesthetics */
-.card-img-top {
+.hero .btn {
+    background-color: #d62828;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #a71d2a;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* ===========>>Using FlexBox: */
+/* START Flexbox Styling >> If you need to center the last row
+cards without usign grid & JS for it */
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    /* Flex-grow, flex-shrink, and base width */
+    flex: 1 1 350px;
+    /* Optional: limit the maximum width of each card */
+    max-width: 350px;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+/* End ----- Flex style */
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+.menu-card img {
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.card-body {
-    text-align: center;
+.menu-card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 5px;
+    color: #d62828;
 }
 
-/* Responsive tweaks */
-@media (max-width: 576px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
+.menu-card p {
+    padding: 0 15px;
+    font-size: 0.95rem;
+    color: #666;
 }
 
-/* Typography */
-h1,
-h2,
-h4 {
+.price {
+    display: block;
+    padding: 10px 0 20px;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    color: #222;
 }
 
-/* Buttons */
-button.btn-success {
-    background-color: #28a745;
-    border: none;
-    padding: 10px 25px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-}
-
-button.btn-success:hover {
-    background-color: #218838;
-}
-
-/* Footer */
-footer {
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0.5rem 0;
-}
+/*//=========================================*/
