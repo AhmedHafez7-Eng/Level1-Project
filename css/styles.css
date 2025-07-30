@@ -136,6 +136,10 @@ body {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .about-content h2 {
@@ -183,6 +187,88 @@ body {
 }
 
 /* =========================== */
+.stats-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.stats-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.stat-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 200px;
+    transition: transform 0.7s ease;
+    -webkit-transition: transform 0.7s ease;
+    -moz-transition: transform 0.7s ease;
+    -ms-transition: transform 0.7s ease;
+    -o-transition: transform 0.7s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transition: transform 0.7s ease;
+    -webkit-transition: transform 0.7s ease;
+    -moz-transition: transform 0.7s ease;
+    -ms-transition: transform 0.7s ease;
+    -o-transition: transform 0.7s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+
+.stat-box p {
+    color: #666;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.stat-box:hover h3 {
+    color: #d62828;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+.stat-box:hover p {
+    color: #000;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* =================================== */
+
 /* Menu Section */
 .menu-section {
     padding: 60px 30px;

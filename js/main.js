@@ -28,5 +28,31 @@ const swiper = new Swiper(".mySwiper", {
     }
 });
 
+/* ============================================= */
+// Initialize AOS (Animate On Scroll)
+AOS.init({
+    duration: 1200, // Animation duration in milliseconds
+    //once: true, // Whether animation should happen only once
+    mirror: false // Whether elements should animate when scrolled past
+});
 
+/* ============================================= */
+// Count Up Animation
+// document.addEventListener("DOMContentLoaded", function () {
+//     const counters = document.querySelectorAll(".counter");
+
+//     counters.forEach(counter => {
+//         const endVal = parseFloat(counter.getAttribute("data-target"));
+//         if (!isNaN(endVal)) {
+//             const countUp = new countUp.CountUp(counter, endVal);
+//             if (!countUp.error) {
+//                 countUp.start();
+//             } else {
+//                 console.error("CountUp error:", countUp.error);
+//             }
+//         } else {
+//             console.error("Invalid data-target:", counter.getAttribute("data-target"));
+//         }
+//     });
+// });
 /* ============================================= */
