@@ -252,73 +252,82 @@ cards without usign grid & JS for it */
 /* Testimonials Section */
 
 .testimonials {
-    padding: 80px 10%;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
     text-align: center;
-    background-color: #f9f9f9;
 }
 
 .testimonials h2 {
-    font-size: 2.5rem;
+    font-size: 32px;
     margin-bottom: 40px;
 }
 
-.swiper {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding: 40px 20px;
-    box-sizing: border-box;
-}
+/* Ensure only one slide is visible */
 
 .testimonial-card {
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 16px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 30px 20px;
-    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     max-width: 500px;
+    margin: auto;
     box-sizing: border-box;
     text-align: center;
-    position: relative;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
 }
 
-/* Avatar inside card */
+.testimonial-card:hover {
+    transform: scale(1.03);
+}
+
+
 .testimonial-avatar {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 15px auto;
+    margin-bottom: 15px;
     display: block;
     border: 3px solid #eee;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.testimonial-card p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.testimonial-card h4 {
-    font-weight: bold;
-    color: #777;
-}
-
-/* Optional: Adjust arrows & pagination */
 .swiper-button-next,
 .swiper-button-prev {
     color: #444;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 30px;
+    color: #d62828;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 50px;
+    /* Adds space between cards and bullets */
+}
+
+.swiper-pagination-bullet {
+    background: #888;
+    opacity: 1;
+    transition: background 0.3s ease;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #000;
+    background: #d62828;
+    /* Highlight active bullet */
 }
+
+
 
 /* ====================================== */
