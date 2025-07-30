@@ -63,3 +63,30 @@ function handleSubmit(event) {
     event.target.reset(); // Reset form fields
 }
 // ==============================================
+// Hamburger Menu Toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const navAnchors = document.querySelectorAll('.nav-link');
+
+hamburger.addEventListener('click', () => {
+    const expanded = navLinks.classList.toggle('active');
+    const isExpanded = navLinks.classList.contains('active');
+    hamburger.setAttribute('aria-expanded', isExpanded);
+    navLinks.setAttribute('aria-expanded', isExpanded);
+});
+
+// Optional: Highlight active link on click
+navAnchors.forEach(link => {
+    link.addEventListener('click', () => {
+        navAnchors.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+
+        // Close the menu after clicking in mobile
+        if (window.innerWidth <= 768) {
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', false);
+            navLinks.setAttribute('aria-expanded', false);
+        }
+    });
+});
+// ==============================================
