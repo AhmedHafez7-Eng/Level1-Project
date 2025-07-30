@@ -63,6 +63,10 @@ body {
     font-weight: bold;
 }
 
+.logoSpan {
+    color: #d62828;
+}
+
 .nav-links {
     display: flex;
     gap: 20px;
