@@ -53,7 +53,7 @@ body {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     /* padding: 0 24px; */
 }
@@ -130,6 +130,10 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .navbar .container {
+        justify-content: space-between;
+    }
+
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -461,12 +465,13 @@ body {
 
 @media (max-width: 480px) {
     .stats-container {
-        align-items: start;
+        align-items: center;
     }
 
     .stat-box {
         width: 100%;
         max-width: 300px;
+        padding: 25px 10px;
     }
 
     .stat-box h3 {
