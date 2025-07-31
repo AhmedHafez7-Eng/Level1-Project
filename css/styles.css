@@ -569,6 +569,41 @@ cards without usign grid & JS for it */
     color: #222;
 }
 
+@media (max-width: 768px) {
+
+    .menu-section {
+        padding: 40px 10px;
+    }
+
+    .menu-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .menu-card {
+        max-width: 90%;
+    }
+
+    .menu-card img {
+        height: 140px;
+    }
+
+    .menu-card h3 {
+        font-size: 1.2rem;
+        margin: 10px 0 5px;
+    }
+
+    .menu-card p {
+        font-size: 0.8rem;
+        padding: 0 10px;
+    }
+
+    .price {
+        padding: 5px 0 15px;
+        font-size: 1rem;
+    }
+}
+
 /*=========================================*/
 
 /* Testimonials Section */
