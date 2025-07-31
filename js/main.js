@@ -1,35 +1,52 @@
 // By: Ahmed Hafez
 
 /* ============================================= */
-const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1 // Small screens
-        },
-        640: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 1
-        },
-        1024: {
-            slidesPerView: 2
-        }
+
+// Wait for the DOM to fully load before executing scripts
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader"); if (loader) {
+        loader.style.opacity = "0"; loader.style.visibility = "hidden";
+        setTimeout(() => { loader.style.display = "none"; }, 500); // optional: completely remove after transition 
+    }
+});
+
+// Initialize Swiper for the hero section
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader"); if (loader) {
+        loader.style.opacity = "0"; loader.style.visibility = "hidden"; setTimeout(() => { loader.style.display = "none"; }, 500); // optional: completely remove after transition } });
+        // 
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1 // Small screens
+                },
+                640: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 1
+                },
+                1024: {
+                    slidesPerView: 2
+                }
+            }
+        });
     }
 });
 
 /* ============================================= */
 // Initialize AOS (Animate On Scroll)
+
 AOS.init({
     duration: 1200, // Animation duration in milliseconds
     //once: true, // Whether animation should happen only once
