@@ -685,6 +685,65 @@ cards without usign grid & JS for it */
     /* Highlight active bullet */
 }
 
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 40px 10px;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .swiper {
+        padding: 0 10px;
+    }
+
+    .testimonial-card {
+        padding: 20px 15px;
+    }
+
+    .testimonial-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial-card h4 {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+    .testimonial-card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    .swiper-button-next {
+        right: -5px;
+    }
+
+    .swiper-button-prev {
+        left: -5px;
+    }
+
+    .swiper-pagination {
+        margin-top: 30px;
+    }
+}
+
 /* ====================================== */
 /* Contact Section */
 /* === Contact Us Section === */
