@@ -119,7 +119,7 @@ restaurant-landing-page/
 <!-- ## 📝 License
 This project is licensed under the MIT License — feel free to use, modify, or build on it! -->
 
-##👤 Author
+## 👤 Author
 
 **🧑‍💻 Developed by Ahmed Hafez**
 
