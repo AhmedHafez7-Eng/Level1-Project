@@ -55,16 +55,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    /* padding: 0 24px; */
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .logoSpan {
     color: #d62828;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: -3px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
@@ -422,6 +432,26 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media (max-width: 480px) {
+    .stats-container {
+        align-items: start;
+    }
+
+    .stat-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .stat-box h3 {
+        font-size: 1.7rem;
+    }
+
+    .stat-box p {
+        font-size: 0.9rem;
+    }
+
 }
 
 /* =================================== */
