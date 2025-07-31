@@ -263,13 +263,18 @@ body {
 /* Phones (≤480px) */
 @media (max-width: 480px) {
     .hero {
-        padding: 40px 15px;
+        padding: 30px 15px;
         text-align: center;
     }
 
+    .hero-content {
+        padding: 0 5px;
+    }
+
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         letter-spacing: 1px;
+        margin-bottom: 20px;
     }
 
     .hero p {
@@ -350,6 +355,26 @@ body {
 
     .about-btn {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us {
+        padding: 70px 10px;
+    }
+
+    .about-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .about-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 
