@@ -152,6 +152,6 @@ This project is licensed under the MIT License — feel free to use, modify, or 
 
 ## 👤 Author
 
-**🧑‍💻 Developed by [Ahmed Hafez](www.linkedin.com/in/ahmedhafez247)**
+**🧑‍💻 Developed by [Ahmed Hafez](https://www.linkedin.com/in/ahmedhafez247)**
 
 **🚀 Level One Project – Full Web Development Learning Plan**
